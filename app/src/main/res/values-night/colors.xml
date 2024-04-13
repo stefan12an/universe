@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF2D3555</color>
+    <color name="primary_highlight">@color/background</color>
+    <color name="background">#FF272B49</color>
+    <color name="secondary">#FF58BD8E</color>
+    <color name="highlight">@color/white</color>
+    <color name="contrast">#FF5F346C</color>
+
+    <color name="contrastTextColor">@color/white</color>
+
+    <color name="shimmerColor">#C2C2C2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

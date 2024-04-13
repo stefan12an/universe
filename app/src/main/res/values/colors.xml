@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF4C0609</color>
+    <color name="primary_highlight">#FFFDFD</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="secondary">#FFF79B4D</color>
+    <color name="highlight">@color/white</color>
+    <color name="contrast">#FF633616</color>
+
+    <color name="contrastTextColor">@color/black</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="shimmerColor">#C2C2C2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#88888888</color>
+</resources>

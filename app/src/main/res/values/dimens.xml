@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Ui Toolkit -->
+
+    <!-- Elevation-->
+    <dimen name="elevation_small" tools:ignore="UnusedResources">4dp</dimen> <!-- buttons -->
+    <dimen name="elevation_medium" tools:ignore="UnusedResources">8dp</dimen> <!-- Cards -->
+    <dimen name="elevation_medium_large" tools:ignore="UnusedResources">12dp</dimen> <!-- Sheets -->
+    <dimen name="elevation_large" tools:ignore="UnusedResources">16dp</dimen> <!-- navigation draw -->
+    <dimen name="elevation_extra_large" tools:ignore="UnusedResources">24dp</dimen> <!-- dialogue -->
+
+    <!-- Font Size -->
+    <dimen name="header_1_text_size">36sp</dimen>
+    <dimen name="header_2_text_size">24sp</dimen>
+    <dimen name="header_3_text_size">20sp</dimen>
+    <dimen name="header_4_text_size">20sp</dimen>
+    <dimen name="header_5_text_size">16sp</dimen>
+    <dimen name="section_header_text_size">12sp</dimen>
+    <dimen name="caption_text_size">14sp</dimen>
+    <dimen name="paragraph_text_size">16sp</dimen>
+    <dimen name="text_link_text_size">16sp</dimen>
+    <dimen name="text_link_small_text_size">14sp</dimen>
+    <dimen name="label_text_size">14sp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="text_button_text_size">16sp</dimen>
+    <dimen name="text_button_small_text_size">14sp</dimen>
+    <dimen name="form_error_text_size">14sp</dimen>
+    <dimen name="form_hint_text_size">14sp</dimen>
+    <dimen name="form_text_size">16sp</dimen>
+
+    <!-- Line height -->
+    <dimen name="header_1_line_height">40dp</dimen>
+    <dimen name="header_2_line_height">28dp</dimen>
+    <dimen name="header_3_line_height">24dp</dimen>
+    <dimen name="header_4_line_height">24dp</dimen>
+    <dimen name="header_5_line_height">20dp</dimen>
+    <dimen name="section_header_line_height">16dp</dimen>
+    <dimen name="caption_line_height">20dp</dimen>
+    <dimen name="paragraph_line_height">24dp</dimen>
+    <dimen name="text_link_line_height" tools:ignore="UnusedResources">24dp</dimen>
+    <dimen name="text_link_small_line_height" tools:ignore="UnusedResources">20dp</dimen>
+    <dimen name="label_line_height">20dp</dimen>
+    <dimen name="button_line_height">48dp</dimen>
+    <dimen name="new_button_line_height">22dp</dimen>
+    <dimen name="form_hint_line_height">20dp</dimen>
+
+    <!-- Misc -->
+    <dimen name="corner_radius">8dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="default_margin">16dp</dimen>
+
+
+    <!-- Padding -->
+    <dimen name="button_lr_padding">32dp</dimen>
+    <dimen name="chip_button_lr_padding">16dp</dimen>
+
+    <dimen name="button_padding">12dp</dimen>
+
+    <!-- Ui Toolkit End -->
+
+    <dimen name="standard_material_padding">16dp</dimen>
+    <dimen name="breakdown_request_reported_message_top_margin">160dp</dimen>
+
+    <dimen name="min_width_primary_button">128dp</dimen>
+
+</resources>
