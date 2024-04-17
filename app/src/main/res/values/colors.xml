@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF4C0609</color>
+    <color name="primary_highlight">#FFFDFD</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="chat_input_background">#FFFFFFFF</color>
+    <color name="background_reverse">@color/black</color>
+    <color name="secondary">#FFF79B4D</color>
+    <color name="secondary_highlight">#FFD9A1</color>
+    <color name="highlight">@color/white</color>
+    <color name="contrast">#FF633616</color>
+
+    <color name="contrastTextColor">@color/black</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="shimmerColor">#C2C2C2</color>
+
+    <color name="text_message_color">@color/black</color>
+    <color name="incoming_message_bubble_color">#eef1f6</color>
+    <color name="date_message_bubble_color">#55eef1f6</color>
+
+    <color name="secondary_k70">#4d4d4d</color>
+    <color name="secondary_k7">#ededed</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#88888888</color>
+    <color name="light_grey">#66666666</color>
+</resources>

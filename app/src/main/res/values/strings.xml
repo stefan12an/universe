@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Universe</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="logout">Logout</string>
+    <string name="verification_steps_text"><![CDATA[Step 1: Check Your Inbox\n\nWe\'ve sent an email to the address you provided during registration. Please check your inbox (and also your spam or junk folder, just in case!) for an email from us.\n\nStep 2: Open the Verification Email\n\nOnce you\'ve located the email, open it to view its contents. The subject line should include something like "Please Verify Your Email Address."\n\nStep 3: Click the Verification Link\n\nWithin the email, you\'ll find a unique verification link. Click on the link to confirm your email address and activate your account.]]>
+</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resend_email">Resend email</string>
+    <string name="validate_email_description">Thank you for signing up! Before you can access your account, we need to verify your email address to ensure the security and validity of your account. Please follow the instructions below to complete the verification process:</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="complete_name">Complete name</string>
+    <string name="skip_onboarding">Finish onboarding and fill in later!</string>
+    <string name="save">Save</string>
+    <string name="your_new_profile_picture">Your new profile picture</string>
+    <string name="chat">Chat</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="loading">Loading...</string>
+    <string name="delete">Delete</string>
+    <string name="like">Like</string>
+    <string name="users">Users</string>
+
+    <string name="edit_email">Edit Email</string>
+    <string name="university_faculty">%s,\n%s</string>
+    <string name="gender">Gender: %s</string>
+    <string name="date_of_birth">Date of birth: %s</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="system">System</string>
+    <string name="theme_settings">Theme Settings</string>
+</resources>
