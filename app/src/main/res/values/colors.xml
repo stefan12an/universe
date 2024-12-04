@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#FF4C0609</color>
-    <color name="primary_highlight">#FFFDFD</color>
-    <color name="background">#FFFFFFFF</color>
+    <color name="primary">#FF510A32</color>
+    <color name="primary_highlight">#FF801336</color>
+    <color name="background">#FFFFFF</color>
     <color name="chat_input_background">#FFFFFFFF</color>
     <color name="background_reverse">@color/black</color>
-    <color name="secondary">#FFF79B4D</color>
-    <color name="secondary_highlight">#FFD9A1</color>
+    <color name="secondary">#FFEE4540</color>
+    <color name="secondary_highlight">#FFC72C41</color>
     <color name="highlight">@color/white</color>
-    <color name="contrast">#FF633616</color>
+    <color name="contrast">#FF2D142C</color>
 
     <color name="contrastTextColor">@color/black</color>
 

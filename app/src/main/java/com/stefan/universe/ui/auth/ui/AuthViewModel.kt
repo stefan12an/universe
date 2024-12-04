@@ -74,10 +74,7 @@ class AuthViewModel @Inject constructor(private val firebaseRepository: Firebase
     }
 
     private fun validateEmail(email: String?): Boolean {
-        return RemoteConfigHelper.getUniversitiesList()
-            .flatMap {
-                it.emailIdentifier
-            }.contains(email?.split("@")?.last())
+        return true
     }
 
     private fun register(email: String?, password: String?) {

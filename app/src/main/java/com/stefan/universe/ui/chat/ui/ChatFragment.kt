@@ -14,7 +14,9 @@ import android.widget.PopupWindow
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.core.content.ContextCompat
 import androidx.core.widget.PopupWindowCompat
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -88,8 +90,19 @@ class ChatFragment : BaseFragment<FragmentChatBinding, ChatViewModel>() {
             false
         }
         binding.toolbarTitleLayout.setOnClickListener { viewModel.action(ChatUserIntent.ViewProfile) }
+        binding.messageInput.addTextChangedListener { text: CharSequence? ->
+            if (text?.isEmpty() == true) {
+                binding.buttonSend.imageTintList =
+                    ContextCompat.getColorStateList(requireContext(), R.color.grey)
+            } else {
+                binding.buttonSend.imageTintList =
+                    ContextCompat.getColorStateList(requireContext(), R.color.secondary)
+            }
+        }
         binding.buttonSend.setOnClickListener {
-            viewModel.action(ChatUserIntent.SendMessage(binding.messageInput.text.toString()))
+            if (binding.messageInput.text.isNotBlank()) {
+                viewModel.action(ChatUserIntent.SendMessage(binding.messageInput.text.toString()))
+            }
         }
         binding.backButton.setOnClickListener { handleBackButton() }
         activity?.onBackPressedDispatcher?.addCallback(

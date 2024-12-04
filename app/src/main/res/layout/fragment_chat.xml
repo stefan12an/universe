@@ -156,7 +156,7 @@
                 android:importantForAccessibility="no"
                 android:padding="12dp"
                 android:src="@drawable/ic_send"
-                app:tint="@color/secondary" />
+                app:tint="@color/grey" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

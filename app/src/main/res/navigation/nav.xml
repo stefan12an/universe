@@ -20,40 +20,24 @@
     <action
         android:id="@+id/action_global_notificationsFragment"
         app:destination="@id/notificationsFragment"
-        app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim"
         app:popUpTo="@id/nav"
         app:popUpToInclusive="true" />
 
     <action
         android:id="@+id/action_global_settingsFragment"
         app:destination="@id/settingsFragment"
-        app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim"
         app:popUpTo="@id/nav"
         app:popUpToInclusive="true" />
 
     <action
         android:id="@+id/action_global_emailValidationFragment"
         app:destination="@id/validateEmailFragment"
-        app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim"
         app:popUpTo="@id/nav"
         app:popUpToInclusive="true" />
 
     <action
         android:id="@+id/action_global_homeFragment"
         app:destination="@id/homeFragment"
-        app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim"
         app:popUpTo="@id/nav"
         app:popUpToInclusive="true" />
 
@@ -65,8 +49,6 @@
         <action
             android:id="@+id/action_homeFragment_to_authFragment"
             app:destination="@id/authFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
         <action
@@ -84,8 +66,6 @@
         <action
             android:id="@+id/action_introFragment_to_authFragment"
             app:destination="@id/authFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/introFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -97,15 +77,11 @@
         <action
             android:id="@+id/action_authFragment_to_homeFragment"
             app:destination="@id/homeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/authFragment"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_authFragment_to_validateEmailFragment"
             app:destination="@id/validateEmailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/authFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -117,8 +93,6 @@
         <action
             android:id="@+id/action_additionalDetailsFragment_to_homeFragment"
             app:destination="@id/homeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/additionalDetailsFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -130,15 +104,11 @@
         <action
             android:id="@+id/action_validateEmailFragment_to_additionalDetailsFragment"
             app:destination="@id/additionalDetailsFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/validateEmailFragment"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_validateEmailFragment_to_authFragment"
             app:destination="@id/authFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left"
             app:popUpTo="@id/validateEmailFragment"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -159,9 +129,7 @@
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_settingsFragment_to_themeSettingsFragment"
-            app:destination="@id/themeSettingsFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:destination="@id/themeSettingsFragment"/>
     </fragment>
     <fragment
         android:id="@+id/newMessageFragment"
