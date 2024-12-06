@@ -56,7 +56,7 @@
             app:destination="@id/newMessageFragment" />
         <action
             android:id="@+id/action_homeFragment_to_chatFragment"
-            app:destination="@id/chatFragment"/>
+            app:destination="@id/chatFragment" />
     </fragment>
     <fragment
         android:id="@+id/introFragment"
@@ -110,7 +110,7 @@
             android:id="@+id/action_validateEmailFragment_to_authFragment"
             app:destination="@id/authFragment"
             app:popUpTo="@id/validateEmailFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/notificationsFragment"
@@ -126,10 +126,7 @@
             android:id="@+id/action_settingsFragment_to_authFragment"
             app:destination="@id/authFragment"
             app:popUpTo="@id/settingsFragment"
-            app:popUpToInclusive="true"/>
-        <action
-            android:id="@+id/action_settingsFragment_to_themeSettingsFragment"
-            app:destination="@id/themeSettingsFragment"/>
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/newMessageFragment"
@@ -138,21 +135,15 @@
         tools:layout="@layout/fragment_new_message">
         <action
             android:id="@+id/action_newMessageFragment_to_chatFragment"
-            app:destination="@id/chatFragment"/>
+            app:destination="@id/chatFragment" />
     </fragment>
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.stefan.universe.ui.chat.ui.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat">>
+        tools:layout="@layout/fragment_chat">
         <argument
             android:name="chat"
             app:argType="com.stefan.universe.ui.chat.data.model.ChatWrapper" />
     </fragment>
-    <fragment
-        android:id="@+id/themeSettingsFragment"
-        android:name="com.stefan.universe.ui.settings.ui.ThemeSettingsFragment"
-        android:label="fragment_theme_settings"
-        tools:layout="@layout/fragment_theme_settings" />
-
 </navigation>

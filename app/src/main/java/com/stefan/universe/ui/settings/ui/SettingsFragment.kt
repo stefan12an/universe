@@ -91,10 +91,6 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
     private fun FragmentSettingsBinding.setSettingsItems() {
         setItem(emailSettings.root, R.string.edit_email)
         setItem(passwordSettings.root, R.string.edit_password)
-        setItem(
-            themeSettings.root.apply { setOnClickListener { viewModel.action(SettingsUserIntent.ChangeTheme) } },
-            R.string.change_theme
-        )
     }
 
     override fun handleSideEffects(sideEffect: SideEffect) {
@@ -104,10 +100,6 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
                 navigate(SettingsFragmentDirections.actionSettingsFragmentToAuthFragment())
             }
 
-            is SettingsSideEffects.NavigateToChangeTheme -> navigate(
-                SettingsFragmentDirections.actionSettingsFragmentToThemeSettingsFragment()
-            )
-
             is SettingsSideEffects.Feedback -> Toast.makeText(
                 requireContext(),
                 sideEffect.message,
@@ -116,7 +108,17 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding, SettingsViewModel
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        (activity as UniApplication).updateStatusBarColor(reset = true)
+    }
+
     override fun setupListeners() {
+        (activity as UniApplication).updateStatusBarColor(
+            color = R.color.contrast,
+            reset = true,
+            lightStatusBar = false
+        )
         binding.logoutButton.setOnClickListener { viewModel.action(SettingsUserIntent.Logout) }
     }
 

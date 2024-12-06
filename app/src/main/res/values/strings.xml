@@ -7,6 +7,7 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">Sign up</string>
     <string name="logout">Logout</string>
+    <string name="conversations">Conversations</string>
     <string name="verification_steps_text"><![CDATA[Step 1: Check Your Inbox\n\nWe\'ve sent an email to the address you provided during registration. Please check your inbox (and also your spam or junk folder, just in case!) for an email from us.\n\nStep 2: Open the Verification Email\n\nOnce you\'ve located the email, open it to view its contents. The subject line should include something like "Please Verify Your Email Address."\n\nStep 3: Click the Verification Link\n\nWithin the email, you\'ll find a unique verification link. Click on the link to confirm your email address and activate your account.]]>
 </string>
 

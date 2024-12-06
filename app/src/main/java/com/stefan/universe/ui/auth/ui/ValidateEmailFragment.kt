@@ -50,7 +50,7 @@ class ValidateEmailFragment : BaseFragment<FragmentValidateEmailBinding, Validat
     override fun setupListeners() {
         binding.resendEmailButton.setOnClickListener { viewModel.action(ValidateEmailUserIntent.SendEmailVerification) }
         binding.closeButton.setOnClickListener { viewModel.action(ValidateEmailUserIntent.GiveUpEmailVerification) }
-        (activity as UniApplication).updateStatusBarColor(color = R.color.primary)
+        (activity as UniApplication).updateStatusBarColor(color = R.color.primary, lightStatusBar = false)
         activity?.onBackPressedDispatcher?.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {

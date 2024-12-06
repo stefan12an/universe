@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
@@ -18,7 +17,6 @@ import com.stefan.universe.common.SideEffect
 import com.stefan.universe.common.base.BaseActivity
 import com.stefan.universe.common.utils.ViewUtils.setLightStatusBars
 import com.stefan.universe.databinding.ActivityMainBinding
-import com.stefan.universe.ui.settings.ui.Theme
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -85,14 +83,6 @@ class UniApplication : BaseActivity<ActivityMainBinding, UniApplicationViewModel
 
     override fun handleSideEffects(sideEffect: SideEffect, navigateTo: NavController) {
         when (sideEffect) {
-            is UniApplicationSideEffects.UpdateTheme -> {
-                when (sideEffect.theme) {
-                    Theme.LIGHT -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    Theme.DARK -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    Theme.SYSTEM -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                }
-            }
-
             is UniApplicationSideEffects.NavigateToMain -> {
                 selectBottomNavigationElement(R.id.chat_page)
                 val action = NavDirections.actionGlobalHomeFragment()
@@ -136,7 +126,11 @@ class UniApplication : BaseActivity<ActivityMainBinding, UniApplicationViewModel
         setupBottomNavigation()
     }
 
-    fun updateStatusBarColor(color: Int = R.color.background, reset: Boolean = false) {
+    fun updateStatusBarColor(
+        color: Int = R.color.background,
+        lightStatusBar: Boolean = true,
+        reset: Boolean = false
+    ) {
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(
@@ -147,7 +141,7 @@ class UniApplication : BaseActivity<ActivityMainBinding, UniApplicationViewModel
             )
             insets
         }
-        window.setLightStatusBars(reset)
+        window.setLightStatusBars(lightStatusBar)
         window.statusBarColor = getColor(color)
     }
 }

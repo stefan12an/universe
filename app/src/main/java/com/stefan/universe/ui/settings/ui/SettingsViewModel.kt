@@ -26,10 +26,6 @@ class SettingsViewModel @Inject constructor(private val firebaseRepository: Fire
             SettingsUserIntent.Logout -> {
                 logout()
             }
-
-            SettingsUserIntent.ChangeTheme -> {
-                pushSideEffect(SettingsSideEffects.NavigateToChangeTheme)
-            }
         }
     }
 
@@ -78,11 +74,9 @@ data class SettingsUiState(
 
 sealed class SettingsUserIntent : UserIntent {
     data object Logout : SettingsUserIntent()
-    data object ChangeTheme : SettingsUserIntent()
 }
 
 sealed class SettingsSideEffects : SideEffect {
     data object NavigateToAuth : SettingsSideEffects()
-    data object NavigateToChangeTheme : SettingsSideEffects()
     data class Feedback(val message: String) : SettingsSideEffects()
 }

@@ -167,26 +167,6 @@
                     layout="@layout/settings_row_item" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/themeCard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/TextAppearance.Material3.TitleMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:paddingLeft="@dimen/standard_material_padding"
-                    android:paddingRight="@dimen/standard_material_padding"
-                    android:text="Theme" />
-
-                <include
-                    android:id="@+id/themeSettings"
-                    layout="@layout/settings_row_item" />
-            </LinearLayout>
-
             <Button
                 android:id="@+id/logoutButton"
                 style="@style/Button.Active"

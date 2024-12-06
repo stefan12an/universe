@@ -9,8 +9,6 @@ import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.Glide
-import com.stefan.universe.R
 import com.stefan.universe.common.EventObserver
 import com.stefan.universe.common.SideEffect
 import com.stefan.universe.common.base.BaseFragment
@@ -85,12 +83,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
 
     private fun updateUi(uiState: HomeUiState) {
         with(binding) {
-            Glide.with(requireContext()).load(uiState.user?.photoUri).placeholder(R.drawable.app_logo).into(profilePicture)
-            welcomeMessageTextView.text = if (uiState.user?.displayName?.isEmpty() == true)
-                "Welcome back!" else "Welcome back, ${uiState.user?.displayName}!"
-            shimmerLayout.apply { visibility = View.GONE; stopShimmer() }
             adapter.submitList(uiState.chats)
             adapter.swapData(uiState.user ?: FirebaseUserModel())
+            shimmerLayout.apply { visibility = View.GONE; stopShimmer() }
             userListRecyclerview.visibility = View.VISIBLE
         }
     }

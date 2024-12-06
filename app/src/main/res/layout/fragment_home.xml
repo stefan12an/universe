@@ -22,19 +22,20 @@
             android:orientation="horizontal"
             android:padding="18dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePicture"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/app_logo" />
-
             <TextView
                 android:id="@+id/welcomeMessageTextView"
-                style="@style/TextAppearance.Material3.TitleMedium"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/conversations" />
+
+            <ImageButton
+                android:id="@+id/new_message_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/loading" />
+                android:background="@drawable/ic_start_new_conv"
+                android:backgroundTint="@color/black" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -84,18 +85,5 @@
         app:layout_constraintTop_toBottomOf="@+id/welcomeMessageCardView"
         tools:listitem="@layout/row_chat_list"
         tools:visibility="visible" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/newMessageIndicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:importantForAccessibility="no"
-        android:src="@drawable/ic_new"
-        app:backgroundTint="@color/secondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
